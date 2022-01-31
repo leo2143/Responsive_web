@@ -1,325 +1,52 @@
-* {
-    padding: 0;
-    margin: 0;
+@keyframes imagen {
+  0% {
+    border-color:  rgb(176, 62, 252);
+    box-shadow: 0px 0px 10px 0px #b333e6a9, inset 0px 0px 10px 0px #b303f8a9;
   }
-  html {
-    font-size: 25px;
-    font-family: "Lato", sans-serif;
+  30% {
+    border: 0.2rem solid transparent;
   }
-  
-  .encabezado {
-    background-color: #42708f;
-    right: 500px;
-    width: auto;
-    height: 15rem;
-    overflow: hidden;
-  }
-  
-  .fondo {
-    position: absolute;
-    display: inline-flex;
-    overflow: hidden;
-    height: 50rem;
-    width: 76rem;
-    opacity: 20%;
-  }
- 
+  50% {
+    border-color: rgb(141, 52, 192);
+    box-shadow: 0px 0px 5px 0px #b333e6a9, inset 0px 0px 10px 0px #b303f8a9;
 
-  
-  
-  .fondo1 {
-    position: absolute;
-    display: inline-flex;
-    overflow: hidden;
-    height: 35.5rem;
-    width: 76rem;
-    opacity: 0%;
   }
-  .fondo2 {
-    position: absolute;
-    display: inline;
-    width: 5rem;
-    top: 2rem;
+  51% {
+    border: 0.2rem solid transparent;
   }
-  .fondo2:enabled .fondo2 {
-    opacity: 70%;
+
+  60% {
+    border-color: rgb(106, 40, 160);
+    box-shadow: 0px 0px 5px 0px rgb(4, 192, 167),
+      inset 0px 0px 10px 0px #b303f8a9;
   }
-  
-  #imagen {
-    display: inline-flex;
-    position: relative;
-    left: 33rem;
-    border-radius: 50rem;
-    border: 0.2rem solid rgb(6, 230, 200);
-    padding: 0.2rem;
-    width: 220px;
-    height: 220px;
-    right: 1rem;
-    top: 2rem;
-    animation-name: imagen;
-    animation-iteration-count: infinite;
-    animation-duration: 4s;
+  70% {
+    border: 0.2rem solid transparent;
   }
-  @keyframes imagen {
-    0% {
-      border-color: rgb(6, 230, 200);
-    }
-    30% {
-      border: 0.2rem solid transparent;
-    }
-    50% {
-      border-color: rgb(6, 230, 200);
-    }
-    51% {
-      border: 0.2rem solid transparent;
-    }
-  
-    60% {
-      border-color: rgb(6, 230, 200);
-    }
-    70% {
-      border: 0.2rem solid transparent;
-    }
-  }
-  .desc {
-    display: inline-block;
-    position: relative;
-    padding: 2px 30px;
-    left: 16.7rem;
-    top: 4rem;
-    color: white;
-    font-family: 1px "Rubik", sans-serif;
-    font-size: 30px;
-    text-decoration: none;
-    overflow: hidden;
-  }
-  .desc span {
-    position: absolute;
-    display: block;
-  }
-  #a {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(1, 128, 64, 1) 25%,
-      rgba(27, 179, 109, 1) 50%,
-      rgba(7, 224, 130, 1) 80%
-    );
-  }
-  #s {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(
-      180deg,
-      transparent,
-      rgba(1, 128, 64, 1) 25%,
-      rgba(27, 179, 109, 1) 50%,
-      rgba(7, 224, 130, 1) 80%
-    );
-  }
-  #d {
-    right: 0;
-    bottom: 0;
-    top: -100%;
-    width: 1px;
-    height: 100%;
-    background: linear-gradient(
-      270deg,
-      transparent,
-      rgba(1, 128, 64, 1) 25%,
-      rgba(27, 179, 109, 1) 50%,
-      rgba(7, 224, 130, 1) 80%
-    );
-  }
-  #f {
-    left: 0;
-    bottom: -100%;
-    width: 1px;
-    height: 100%;
-    background: linear-gradient(
-      360deg,
-      transparent,
-      rgba(1, 128, 64, 1) 25%,
-      rgba(27, 179, 109, 1) 50%,
-      rgba(7, 224, 130, 1) 80%
-    );
-  }
-  
-  @keyframes desc {
-    0% {
-      border-top: solid #00165b;
-  
-      padding: 5px;
-    }
-  
-    20% {
-    }
-  
-    40% {
-    }
-  
-    70% {
-    }
-  
-    100% {
-      border: transparent;
-    }
-  }
-  
-  
-  .principal {
-    background: rgb(1, 128, 64);
-    background: linear-gradient(
-      184deg,
-      rgba(1, 128, 64, 1) 25%,
-      rgba(27, 179, 109, 1) 50%,
-      rgba(7, 224, 130, 1) 80%
-    );
-    height: 50rem;
-    width: auto;
-    overflow: hidden;
-  }
-  .lista_general {
-    display: flexbox;
-    position: relative;
-    align-items: center;
-    text-align: center;
-    max-width: 700px;
-    height: 1rem;
-    z-index: 99;
-  }
-  .li {
-    text-orientation: initial;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    display: block;
-    margin-block-start: 1rem;
-    margin-block-end: 1rem;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 10px;
-    border: solid black;
-    top: 5rem;
-    left: 24.1rem;
-    height: 3rem;
-    transition: 700ms;
-    animation-name: neones;
-    animation-iteration-count: infinite;
-    animation-duration: 4s;
-  }
-  @keyframes neones {
-    0% {
-      border: 2px solid rgb(6, 230, 200);
-      box-shadow: 0px 0px 10px 0px #b333e6a9, inset 0px 0px 10px 0px #b303f8a9;
-    }
-    50% {
-      border: 2px solid #c352f0a9;
-      box-shadow: 0px 0px 5px 0px #b333e6a9, inset 0px 0px 10px 0px #b303f8a9;
-    }
-    60% {
-      border: 2px solid transparent;
-      box-shadow: none;
-    }
-    80% {
-      border: 2px solid #c352f0a9;
-      box-shadow: 0px 0px 5px 0px rgb(4, 192, 167),
-        inset 0px 0px 10px 0px #b303f8a9;
-    }
-    100% {
-      border: 2px solid transparent;
-      box-shadow: none;
-    }
-  }
-  
-  .li_a {
-    align-items: center;
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    justify-content: space-between;
-    padding: 20px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    color: white;
-  }
-  .imagen2 {
-    position: relative;
-    width: 1.2rem;
-    height: 1.2rem;
-    transition: all 700ms;
-    overflow: hidden;
-  }
-  
-  footer {
-  }
-  
-  .li:hover {
-    transform: scale(1.1);
-    transition: all 700ms;
-  }
-  .li:hover .imagen2 {
-    transform: rotate(360deg) scale(1.5);
-    transition: all 500ms;
-  }
-  #Instragram:hover {
-    background-color: rgb(158, 34, 158);
-    transition: 700ms;
-  }
-  #Twitter:hover {
-    background-color: rgb(34, 112, 185);
-    transition: 700ms;
-  }
-  #GitHub:hover {
-    background-color: rgb(12, 2, 12);
-    transition: 700ms;
-  }
-  #Linkedin:hover {
-    background-color: rgb(6, 17, 168);
-    transition: 700ms;
-  }
-  #Discord:hover {
-    background-color: #00165b;
-    transition: 700ms;
-  }
-  .desc:hover #a {
-    left: 100%;
-    transition: 1.5s;
-  }
-  .desc:hover #s {
-    right: 100%;
-    transition: 1.5s;
-    transition-delay: 0.6s;
-  }
-  .desc:hover #d {
-    top: 100%;
-    transition: 1.5s;
-    transition-delay: 0.25s;
-  }
-  .desc:hover #f {
-    bottom: 100%;
-    transition: 1.5s;
-    transition-delay: 1.2s;
-  }
+}
 
 
 
-
-
-
-
-
-
-  
-    
-
-
-  
+@keyframes neones {
+  0% {
+    border: 2px solid rgb(6, 230, 200);
+    box-shadow: 0px 0px 10px 0px #b333e6a9, inset 0px 0px 10px 0px #b303f8a9;
+  }
+  50% {
+    border: 2px solid #c352f0a9;
+    box-shadow: 0px 0px 5px 0px #b333e6a9, inset 0px 0px 10px 0px #b303f8a9;
+  }
+  60% {
+    border: 2px solid transparent;
+    box-shadow: none;
+  }
+  80% {
+    border: 2px solid #c352f0a9;
+    box-shadow: 0px 0px 5px 0px rgb(4, 192, 167),
+      inset 0px 0px 10px 0px #b303f8a9;
+  }
+  100% {
+    border: 2px solid transparent;
+    box-shadow: none;
+  }
+}

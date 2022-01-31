@@ -8,9 +8,13 @@
       right: 22.50rem;
       width: 80%;
     }
-    #imagen{
+    #yo{
       left: 20%;
       right: auto;
      
+    }
+    #fondo{
+      width: 25rem;
+      height: 25rem;
     }
   
