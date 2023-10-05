@@ -17,44 +17,50 @@
 --frenchGray: #b5bec6;
 --tyrianPurple: #600047;
 
---umber: #776258;
---darkCyan: #558c8c;
---flax: #ffee93;
---lavander: #e1dee9;
---paleDogwood: #d4bebe;
+/*fondo*/--umber: #776258;
+/*verde*/--darkCyan: #558c8c;
+/**/--flax: #ffee93;
+/*texto*/--lavander: #e1dee9;
+/**/--paleDogwood: #d4bebe;
+
+
 }
 .header-container{
-    background-color: var(--black);
+
+    background-color: var(--umber);
     padding: 30px;    
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     
 }
 .imagen-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 130px;
+    width: 170px;
+    height: 159px;
     border-radius: 50%;
-    background-image: url(/MicrosoftTeams-image\ \(20\).png);
-    background-size: 231px;
-    background-position: -20px;
+    border: solid var(--darkCyan) 2px;
+    background-image: url(sources/3c3f9d076a35e4e591a68c6930d430fa.jpg);
+    background-repeat: no-repeat;
+    background-size: 185px;
+    background-position: -1px;
 }
 .subtitulo-container{
-    color: var(--frenchGray);
+    color: var(--lavander);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
     text-align: center;
+    font-size: 17px;
+
 }
 .main-container{
-    padding: 40px;
-    background-color: var(--black);
+    padding: 20px;
+    background-color: var(--umber);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,14 +68,15 @@
     gap:12px
 }
 .container-social-media{
-    color: var(--silver);
-    background-color: var(--umber);
+    color: var(--lavander);
+    background-color: var(--darkCyan);
     display: flex;
     flex-direction: row;
     gap: 144px;
     width: 250px;
     height: 75px;
-    border: solid var(--marianBlue) 1px;
+    border: solid var(--paleDogwood) 2px;
+    border-radius: 9px;
     align-items: center;
 
 }
@@ -79,13 +86,30 @@
     justify-content: right;
     position: relative;
     left: 15px;
-    color: var(--frenchGray);
+    color: var(--lavander);
    
 }
 .container-texto{
     display: flex;
     text-align: left;
     justify-content: left;
-    color: var(--frenchGray);
+    color: var(--lavander);
 
+}
+
+.container-social-media:hover{
+    background-color:var(--paleDogwood);
+    border: solid var(--darkCyan) 2px;
+
+    transform: scale(1.1);
+    transition: all 700ms;
+}
+
+.container-social-media:hover .logo-conainer {
+  transform: rotate(360deg) scale(1.5);
+  transition: all 500ms;
+  color: var(--darkCyan);
+}
+.container-social-media:hover .container-texto {
+    color: var(--darkCyan);
 }
