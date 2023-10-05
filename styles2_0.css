@@ -11,6 +11,7 @@
 --violet:#502f4c;
 
 --umber: #776258;
+--umberDark: #604f47;
 --nigth: #071108;
 --black: #000;
 --marianBlue: #003f91;
@@ -24,6 +25,11 @@
 /**/--paleDogwood: #d4bebe;
 
 
+}
+a{
+text-decoration: none;
+text-decoration: none;
+outline: none; 
 }
 .header-container{
 
