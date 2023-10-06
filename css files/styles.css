@@ -4,30 +4,18 @@
 }
 :root{
 
---midnigth-green: #0f4c5c;
---batleship:#8a817c;
---silver:#bcb8b1;
---palatine:#4c1e4f;
---violet:#502f4c;
-
---umber: #776258;
---umberDark: #604f47;
---nigth: #071108;
---black: #000;
---marianBlue: #003f91;
---frenchGray: #b5bec6;
---tyrianPurple: #600047;
-
 /*fondo*/--umber: #776258;
 /*verde*/--darkCyan: #558c8c;
 /**/--flax: #ffee93;
 /*texto*/--lavander: #e1dee9;
 /**/--paleDogwood: #d4bebe;
 
-
 }
-a{
-text-decoration: none;
+.links-container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 text-decoration: none;
 outline: none; 
 }
@@ -49,12 +37,14 @@ outline: none;
     width: 170px;
     height: 159px;
     border-radius: 50%;
-    border: solid var(--darkCyan) 2px;
-    background-image: url(sources/3c3f9d076a35e4e591a68c6930d430fa.jpg);
+    border: solid var(--darkCyan) 3px;
+    background-image: url(/sources/3c3f9d076a35e4e591a68c6930d430fa.jpg);
     background-repeat: no-repeat;
     background-size: 185px;
     background-position: -1px;
+    
 }
+
 .subtitulo-container{
     color: var(--lavander);
     display: flex;
@@ -62,11 +52,15 @@ outline: none;
     align-items: center;
     text-align: center;
     font-size: 17px;
-
+    font-family: 'Cinzel', serif;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
 }
 .main-container{
-    padding: 20px;
-    background-color: var(--umber);
+    padding-top: 20px;
+    padding-bottom: 34px;
+    background: rgb(119,98,88);
+    background: linear-gradient(180deg, rgba(119,98,88,1) 38%, rgba(164,144,141,1) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +80,7 @@ outline: none;
     align-items: center;
 
 }
-.logo-conainer{
+.logo-container{
     display: flex;
     text-align: right;
     justify-content: right;
@@ -100,22 +94,8 @@ outline: none;
     text-align: left;
     justify-content: left;
     color: var(--lavander);
-
-}
-
-.container-social-media:hover{
-    background-color:var(--paleDogwood);
-    border: solid var(--darkCyan) 2px;
-
-    transform: scale(1.1);
-    transition: all 700ms;
-}
-
-.container-social-media:hover .logo-conainer {
-  transform: rotate(360deg) scale(1.5);
-  transition: all 500ms;
-  color: var(--darkCyan);
-}
-.container-social-media:hover .container-texto {
-    color: var(--darkCyan);
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    font-size: 13px;
+    
 }
