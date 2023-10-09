@@ -50,7 +50,7 @@
 
 .container-social-media:hover .logo-container {
   transform: rotate(360deg) scale(1.5);
-  transition: all 500ms;
+  transition: all 700ms;
   color: var(--darkCyan);
   
 }

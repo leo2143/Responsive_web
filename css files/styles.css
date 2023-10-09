@@ -5,10 +5,10 @@
 :root{
 
 /*fondo*/--umber: #776258;
-/*verde*/--darkCyan: #558c8c;
-/**/--flax: #ffee93;
+/*fondo cuadros*/--darkCyan: #558c8c;
+/*no hay uso*/--flax: #ffee93;
 /*texto*/--lavander: #e1dee9;
-/**/--paleDogwood: #d4bebe;
+/*hoover; fondo*/--paleDogwood: #d4bebe;
 
 }
 .links-container{
@@ -38,7 +38,7 @@ outline: none;
     height: 159px;
     border-radius: 50%;
     border: solid var(--darkCyan) 3px;
-    background-image: url(/sources/goyo.jpg);
+    background-image: url(/goyo.jpg);
     background-repeat: no-repeat;
     background-size: 185px;
     background-position: -1px;
