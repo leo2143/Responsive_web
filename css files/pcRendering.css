@@ -1,5 +1,28 @@
-
+body{
+  
+  overflow-y: hidden;
+}
 .container-social-media{
-  gap: 358px;
-  width: 463px;
+  gap: 480px;
+  width: 600px;
+}
+.container-texto{
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  color: var(--lavander);
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  font-size: 14px;
+  
+}
+.logo-container{
+  scale: 1.2;   
+}
+.main-container{
+  padding-top: 50px;
+  justify-content: flex-start;
+  height: 615px;
+  gap: 20px;
+
 }
